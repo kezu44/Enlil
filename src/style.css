@@ -3,7 +3,8 @@ F9F7F7 background
 DBE2EF light shadow 
 3F72AF text color light
 112D4E text color dark
-
+a0a0a0 grey color
+6b6054 dark brown color
 FEFAF6 background main
 EADBC8 background app
 DAC0A3 shadows
@@ -32,5 +33,7 @@ h1{
     border-radius: 4px;
     border: none;
     padding: 10px;
-    outline-color: #3F72AF;
-}
+    input:focus {
+        border-color: #ff0000;
+      }
+     }
