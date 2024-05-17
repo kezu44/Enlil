@@ -4,14 +4,17 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
     <title>Weather App</title>
 </head>
 <body>
     <div class="app-box">
     <Header>
-        <form>
-        <input type="search" placeholder="Find your city" required>
-        <input type="submit" value="Search">
+        <form class="search-form">
+        <input type="search" placeholder="Find your city" required class="search-form-input">
+        <input type="submit" value="Search" class="search-form-button">
         </form>
     </Header>
     <main>
@@ -21,12 +24,11 @@
         </h1>
         ☀️ 21C°
     </div>
-<p> Temperature
-    <br/> humitiy
-    <br/> wind
-</p>
-    </main>
- 
+     <p> Temperature
+        <br/> humitiy
+        <br/> wind
+    </p>
+    </main> 
 </body>
 
 <footer>
@@ -36,5 +38,5 @@
     <a href="https://enlilweather.netlify.app/" target="_blank">hosted on Netlify</a>
 </footer>
 </div>  
-<script src="scr/script.js"></script>
+<script src="src/script.js"></script>
 </html>

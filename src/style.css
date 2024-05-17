@@ -6,12 +6,17 @@ DBE2EF light shadow
 */
 
 body {
-    background-color: #3a393a;
+    background-color: #FEFAF6;
+   font-family: "Reddit Sans", sans-serif;
+  
 }
 .app-box{
-    background: #F9F7F7;
+    background: #EADBC8;
     max-width: 650px;
     margin: 30px auto;
-    box-shadow: 30px #DBE2EF;
+    box-shadow: 0 10px 20px #DAC0A3;
+    border-radius: 12px;
     padding: 30px;
 }
+h1{
+    color: #102C57;}
