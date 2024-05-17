@@ -59,17 +59,18 @@ a {
 
 .cityname {
     color: #102C57;
-    font-size-adjust: calc(30%);
+    font-size: 36px;
     text-align: center;
 }
 
 .temp-display {
-    di: center;
+    text-align: center;
+    font-size: 40px;
 }
 .info-box {
     display: inline-flex;
-    margin: 10px
-}
+    padding-top: 20px;
+   }
 .uv-display {
     padding: 0 10px 0 10px;
 }
