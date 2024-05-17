@@ -16,6 +16,12 @@ body {
     font-family: "Reddit Sans", sans-serif;
   
 }
+form {
+    padding-bottom: 20px;
+}
+footer {
+    padding-top: 20px;
+}
 .app-box{
     background: #EADBC8;
     max-width: 650px;
