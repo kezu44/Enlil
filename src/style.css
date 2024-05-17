@@ -34,7 +34,7 @@ a {
     background: #EADBC8;
     max-width: 650px;
     margin: 30px auto;
-    box-shadow: 0 10px 20px #DAC0A3;
+    box-shadow: 0 10px 10px #DAC0A3;
     border-radius: 12px;
     padding: 30px;
 }
@@ -45,11 +45,15 @@ a {
     border-radius: 4px;
     border: none;
     padding: 10px;
+    outline: none;
  }
  
+ .search-input:focus {
+    border: 2px solid #6b6054b7;
+ }
+
  .search-button {
     width: 15%;
-    /*font-size: ;*/
     margin-left: 10px;
     background-color: #102C57;
     border-radius: 10px;
@@ -60,17 +64,22 @@ a {
 .cityname {
     color: #102C57;
     font-size: 36px;
+    font-weight: bold;
     text-align: center;
 }
 
 .temp-display {
+    color: #102C57;
     text-align: center;
-    font-size: 40px;
+    font-size: 36px;
+    padding-bottom: 30px;
 }
 .info-box {
-    display: inline-flex;
-    padding-top: 20px;
-   }
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+}
 .uv-display {
     padding: 0 10px 0 10px;
 }
