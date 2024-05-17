@@ -13,7 +13,7 @@ DAC0A3 shadows
 
 body {
     background-color: #FEFAF6;
-   font-family: "Reddit Sans", sans-serif;
+    font-family: "Reddit Sans", sans-serif;
   
 }
 .app-box{
@@ -24,8 +24,7 @@ body {
     border-radius: 12px;
     padding: 30px;
 }
-h1{
-    color: #102C57;}
+
 
 .search-input {
     width: 80%;
@@ -33,7 +32,18 @@ h1{
     border-radius: 4px;
     border: none;
     padding: 10px;
-    input:focus {
-        border-color: #ff0000;
-      }
-     }
+ }
+ 
+ .search-button {
+    width: 15%;
+    font-weight: bolder;
+    margin-left: 10px;
+    background-color: #102C57;
+    border-radius: 10px;
+    padding: 10px;
+    color: #F9F7F7;
+ }
+.cityname {
+    color: #102C57;
+    font-size-adjust: calc(30%);
+}
