@@ -1,3 +1,17 @@
+/*colours palette:
+F9F7F7 background
+DBE2EF light shadow 
+3F72AF text color light
+112D4E text color dark
+*/
+
 body {
-    background-color: #F9F7F7;
+    background-color: #3a393a;
+}
+.app-box{
+    background: #F9F7F7;
+    max-width: 650px;
+    margin: 30px auto;
+    box-shadow: 30px #DBE2EF;
+    padding: 30px;
 }
