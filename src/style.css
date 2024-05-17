@@ -18,9 +18,17 @@ body {
 }
 form {
     padding-bottom: 20px;
+    
 }
 footer {
     padding-top: 20px;
+    font-size: small;
+    text-align: center;
+    opacity: 80%;
+}
+
+a {
+    color: #102C57;
 }
 .app-box{
     background: #EADBC8;
@@ -30,7 +38,6 @@ footer {
     border-radius: 12px;
     padding: 30px;
 }
-
 
 .search-input {
     width: 80%;
@@ -42,14 +49,33 @@ footer {
  
  .search-button {
     width: 15%;
-    font-weight: bolder;
+    /*font-size: ;*/
     margin-left: 10px;
     background-color: #102C57;
     border-radius: 10px;
     padding: 10px;
     color: #F9F7F7;
  }
+
 .cityname {
     color: #102C57;
     font-size-adjust: calc(30%);
+    text-align: center;
+}
+
+.temp-display {
+    di: center;
+}
+.info-box {
+    display: inline-flex;
+    margin: 10px
+}
+.uv-display {
+    padding: 0 10px 0 10px;
+}
+.humidity-display {
+    padding: 0 10px 0 10px;
+}
+.wind-display {
+    padding: 0 10px 0 10px;
 }
