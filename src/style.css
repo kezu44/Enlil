@@ -67,7 +67,11 @@ a {
     font-weight: bold;
     text-align: center;
 }
-
+.date {
+    color: #102C57;
+    font-size: 20px;    
+    text-align: center;
+}
 .temp-container{
     color: #102C57;
     display: flex;

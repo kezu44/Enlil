@@ -4,16 +4,31 @@ function refreshWeather(response) {
     let cityElement = document.querySelector("#cityname");
     let humidityElement = document.querySelector("#humidity-display");
     let windElement = document.querySelector("#wind-display");
+    let dateElement = document.querySelector("#date");
 
     let temperature = response.data.temperature.current;
     let cityName = response.data.city;
     let humidity = response.data.temperature.humidity;
     let windSpeed = response.data.wind.speed;
+    let dateTimestamp = response.data.time;
+    let date = new Date(dateTimestamp * 1000);
+  
 
     cityElement.innerHTML = cityName;
     temperatureElement.innerHTML = Math.round(temperature);
     humidityElement.innerHTML = `Humidity: ${humidity}%`;
     windElement.innerHTML = `Wind: ${windSpeed} km/h`;
+    dateElement.innerHTML = formatDate(date);
+}
+
+// Function to format date
+function formatDate(date) {
+    let days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
+    let minutes = date.getMinutes();
+    let hours = date.getHours();
+    let day = days[date.getDay()];
+
+    return `${day}, ${hours}:${minutes}`;
 }
 
 // Function to search for a city's weather
@@ -36,3 +51,6 @@ function handleSearchSubmit(event) {
 // Adding event listener to the form
 let searchFormElement = document.querySelector("#search-form");
 searchFormElement.addEventListener("submit", handleSearchSubmit);
+
+// adding default loading city
+searchCity("Zürich");
