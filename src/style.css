@@ -74,31 +74,38 @@ a {
     text-align: center;
 }
 
-.weather-condition {
-    color: #102C57;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    font-size: 18px;
-    padding-bottom: 30px;
-}
-
-.condition-icon {
-    width: 100px;
-    height: 100px;
-}
-
 .temp-container{
     color: #102C57;
     display: flex;
     justify-content: center;
     align-items: center;
     font-size: 36px;
-    padding-bottom: 30px;
+    padding-bottom: 20px;
 }
 .temp-unit{
     padding-left: 10px;
 }
+
+.weather-condition {
+    color: #102C57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 40px; /* Adjust the padding-bottom value as needed */
+}
+
+.condition-icon img {
+    position: relative;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    }
+
+.condition-container {    
+    justify-content: center;
+    align-items: center; 
+}
+
 .info-box {
     display: flex;
     justify-content: center;
