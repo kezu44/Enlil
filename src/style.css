@@ -67,11 +67,22 @@ a {
     font-weight: bold;
     text-align: center;
 }
+
 .date {
     color: #102C57;
     font-size: 20px;    
     text-align: center;
 }
+
+.weather-condition {
+    color: #102C57;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding-bottom: 30px;
+}
+
 .temp-container{
     color: #102C57;
     display: flex;

@@ -5,6 +5,7 @@ function refreshWeather(response) {
     let humidityElement = document.querySelector("#humidity-display");
     let windElement = document.querySelector("#wind-display");
     let dateElement = document.querySelector("#date");
+    let conditionElement = document.querySelector("#condition");
 
     let temperature = response.data.temperature.current;
     let cityName = response.data.city;
@@ -12,6 +13,8 @@ function refreshWeather(response) {
     let windSpeed = response.data.wind.speed;
     let dateTimestamp = response.data.time;
     let date = new Date(dateTimestamp * 1000);
+    let weathercondition = response.data.condition.description;
+    //let icon = response.data.condition.icon;
   
 
     cityElement.innerHTML = cityName;
@@ -19,6 +22,7 @@ function refreshWeather(response) {
     humidityElement.innerHTML = `Humidity: ${humidity}%`;
     windElement.innerHTML = `Wind: ${windSpeed} km/h`;
     dateElement.innerHTML = formatDate(date);
+    conditionElement.innerHTML = ` ${weathercondition}`
 }
 
 // Function to format date
@@ -30,6 +34,9 @@ function formatDate(date) {
 
     return `${day}, ${hours}:${minutes}`;
 }
+
+// Function to display Icon and weather condition
+
 
 // Function to search for a city's weather
 function searchCity(city) {
