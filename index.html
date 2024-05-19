@@ -5,45 +5,41 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="src/style.css">
     <link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
-<script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>   
-<title>Weather App</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Reddit+Sans:ital,wght@0,200..900;1,200..900&display=swap" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/axios@1.6.7/dist/axios.min.js"></script>   
+    <title>Weather App</title>
 </head>
 <body>
     <div class="app-box">
-    <Header>
-        <form class="search-form" id="search-form">
-        <input type="search" placeholder="Find your city" required class="search-input" id="search-input">
-        <input type="submit" value="Search" class="search-button">
-        </form>
-    </Header>
-    <main>
-    <div>
-        <h1 class="cityname" id="cityname">
-            Fantasyland
-        </h1>
-        <div class="temp-container">
-            <div class="temp-display" id="tempdisplay">21</div>
-            <div class="temp-unit" id="tempunit">°C</div>
-        </div>
+        <header>
+            <form class="search-form" id="search-form">
+                <input type="search" placeholder="Find your city" required class="search-input" id="search-input">
+                <input type="submit" value="Search" class="search-button">
+            </form>
+        </header>
+        <main>
+            <div>
+                <h1 class="cityname" id="cityname">Fantasyland</h1>
+                <div class="temp-container">
+                    <div class="temp-display" id="tempdisplay">21</div>
+                    <div class="temp-unit" id="tempunit">°C</div>
+                </div>
+            </div>
+            <div class="info-box">
+                <p>
+                    <div class="humidity-display" id="humidity-display">Humidity</div>
+                    <div class="wind-display" id="wind-display">Wind</div>
+                </p>
+            </div>
+        </main> 
     </div>
-    <div class="info-box">
-     <p>
-        <div class="uv-display"> UV Index </div>
-        <div class="humidity-display"> humidity </div>
-        <div class="wind-display"> wind </div>
-     </p>
-    </div>
-    </main> 
+    <footer>
+        This project was coded by
+        <a href="https://github.com/kezu44" target="_blank">Kesia</a> and is on 
+        <a href="https://github.com/kezu44?tab=repositories" target="_blank">GitHub</a> and
+        <a href="https://enlilweather.netlify.app/" target="_blank">hosted on Netlify</a>
+    </footer>
+    <script src="src/script.js"></script>
 </body>
-
-<footer>
-    This project was coded by
-    <a href="https://github.com/kezu44" target="_blank">Kesia</a> and is on 
-    <a href="https://github.com/kezu44?tab=repositories" target="_blank">GitHub</a> and
-    <a href="https://enlilweather.netlify.app/" target="_blank">hosted on Netlify</a>
-</footer>
-</div>  
-<script src="src/script.js"></script>
 </html>
