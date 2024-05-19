@@ -59,7 +59,20 @@ a {
     border-radius: 10px;
     padding: 10px;
     color: #F9F7F7;
- }
+    font-size: 16px; 
+}
+
+@media screen and (max-width: 768px) {
+    .search-button {
+        font-size: 14px;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    .search-button {
+        font-size: 11px;
+    }
+}
 
 .cityname {
     color: #102C57;
