@@ -68,11 +68,16 @@ a {
     text-align: center;
 }
 
-.temp-display {
+.temp-container{
     color: #102C57;
-    text-align: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     font-size: 36px;
     padding-bottom: 30px;
+}
+.temp-unit{
+    padding-left: 10px;
 }
 .info-box {
     display: flex;
