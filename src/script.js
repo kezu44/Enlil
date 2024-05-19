@@ -14,15 +14,16 @@ function refreshWeather(response) {
     let dateTimestamp = response.data.time;
     let date = new Date(dateTimestamp * 1000);
     let weathercondition = response.data.condition.description;
-    //let icon = response.data.condition.icon;
-  
-
+    let iconElement = document.querySelector("#icon");
+    
+    
     cityElement.innerHTML = cityName;
     temperatureElement.innerHTML = Math.round(temperature);
     humidityElement.innerHTML = `Humidity: ${humidity}%`;
     windElement.innerHTML = `Wind: ${windSpeed} km/h`;
     dateElement.innerHTML = formatDate(date);
-    conditionElement.innerHTML = ` ${weathercondition}`
+    conditionElement.innerHTML = `${icon} ${weathercondition}`;
+    iconElement.innerHTML=`<img src="${response.data.condition.icon_url}" class="condition-icon"/>`;
 }
 
 // Function to format date
@@ -34,9 +35,6 @@ function formatDate(date) {
 
     return `${day}, ${hours}:${minutes}`;
 }
-
-// Function to display Icon and weather condition
-
 
 // Function to search for a city's weather
 function searchCity(city) {

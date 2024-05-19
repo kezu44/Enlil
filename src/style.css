@@ -83,6 +83,11 @@ a {
     padding-bottom: 30px;
 }
 
+.condition-icon {
+    width: 100px;
+    height: 100px;
+}
+
 .temp-container{
     color: #102C57;
     display: flex;
