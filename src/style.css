@@ -110,11 +110,12 @@ a {
     position: relative;
     left: 50%;
     transform: translate(-50%, -50%);
-    }
+     }
 
 .condition-container {    
     justify-content: center;
     align-items: center; 
+    padding-bottom: 10px;
 }
 
 .info-box {
@@ -122,9 +123,6 @@ a {
     justify-content: center;
     align-items: center;
     font-size: 18px;
-}
-.uv-display {
-    padding: 0 10px 0 10px;
 }
 .humidity-display {
     padding: 0 10px 0 10px;
